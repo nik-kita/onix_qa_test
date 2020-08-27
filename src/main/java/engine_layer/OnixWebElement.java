@@ -8,4 +8,8 @@ public class OnixWebElement {
     public OnixWebElement(WebElement webElement) {
         this.webElement = webElement;
     }
+
+    public void click() {
+        webElement.click();
+    }
 }

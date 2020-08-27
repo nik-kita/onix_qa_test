@@ -1,6 +1,7 @@
 package engine_layer;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import locators.Locator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,5 +32,9 @@ public class OnixWebDriver {
             onixElements.add(new OnixWebElement(e));
         }
         return onixElements;
+    }
+
+    public OnixWebElement findElement(Locator locator) {
+        return new OnixWebElement(driver.findElement(locator.getPath()));
     }
 }

@@ -1,9 +1,10 @@
 package page_objects;
 
 import engine_layer.OnixWebDriver;
+import locators.MainPageLoc;
 
 public class BasePO {
-    private OnixWebDriver driver;
+    protected OnixWebDriver driver;
     private String baseUrl = "http://the-internet.herokuapp.com/";
 
     public BasePO(OnixWebDriver driver) {
@@ -11,6 +12,9 @@ public class BasePO {
     }
 
     public MainPO goMainPage() {
+        driver.get(baseUrl);
         return new MainPO(driver);
     }
+
+
 }
