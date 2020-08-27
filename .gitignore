@@ -1,5 +1,5 @@
 # my ignores
-Lab.java
+src/main/java/Lab.java
 ### Java template
 *.class
 
