@@ -1,4 +1,5 @@
-reated by .ignore support plugin (hsz.mobi)
+# my ignores
+src/main/java/Lab.java
 ### Java template
 *.class
 
