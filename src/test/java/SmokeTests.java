@@ -8,8 +8,8 @@ public class SmokeTests extends TestRunner {
 
     @Test(dataProvider = "getMainPageLocators")
     public void mainPageSmoke(Locator locator) {
-        driver.get("http://the-internet.herokuapp.com/");
-        Assert.assertTrue(driver.findElements(locator.getPath()).size() == 1);
+        onixWebDriver.get("http://the-internet.herokuapp.com/");
+        Assert.assertTrue(onixWebDriver.findElements(locator.getPath()).size() == 1);
     }
 
     @DataProvider
