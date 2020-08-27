@@ -18,4 +18,9 @@ public class MainPO extends BasePO {
         driver.findElement(MainPageLoc.MenuLink.FORM_AUTHENTICATION).click();
         return new FormAuthenticationPO(driver);
     }
+
+    public DropDownPO goDropDownPage() {
+        driver.findElement(MainPageLoc.MenuLink.DROPDOWN).click();
+        return new DropDownPO(driver);
+    }
 }
