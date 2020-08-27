@@ -22,6 +22,8 @@ public class Lab {
     }
 
     @AfterClass
+
+
     public void driverKaput() {
         driver.quit();
     }
