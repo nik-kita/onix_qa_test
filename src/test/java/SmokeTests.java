@@ -15,14 +15,14 @@ public class SmokeTests extends TestRunner {
     @DataProvider
     public Object[] getMainPageLocators() {
         int mainPageLocLen = MainPageLoc.values().length;
-        int menuLinksLocLen = MainPageLoc.MenuLinkLoc.values().length;
+        int menuLinksLocLen = MainPageLoc.MenuLink.values().length;
         Locator[] locators = new Locator[mainPageLocLen + menuLinksLocLen];
         int j = 0;
         for(int i = 0; i < mainPageLocLen; i++, j++) {
             locators[j] = MainPageLoc.values()[i];
         }
         for(int i = 0; i < menuLinksLocLen; i++, j++) {
-            locators[j] = MainPageLoc.MenuLinkLoc.values()[i];
+            locators[j] = MainPageLoc.MenuLink.values()[i];
         }
         return locators;
     }

@@ -20,7 +20,7 @@ public enum MainPageLoc implements Locator {
         return path;
     }
 
-    public enum MenuLinkLoc implements Locator {
+    public enum MenuLink implements Locator {
         AB_TESTING(By.cssSelector("[href='/abtest']")),
         ADD_REMOVE_ELEMENTS(By.cssSelector("[href='/add_remove_elements/']")),
         BASIC_AUTH(By.cssSelector("[href='/basic_auth']")),
@@ -68,7 +68,7 @@ public enum MainPageLoc implements Locator {
 
         private By path;
 
-        MenuLinkLoc(By path) {
+        MenuLink(By path) {
             this.path = path;
         }
         @Override
