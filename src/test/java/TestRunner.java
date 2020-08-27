@@ -1,20 +1,23 @@
 import engine_layer.OnixWebDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import page_objects.MainPO;
 
 public class TestRunner {
-    OnixWebDriver onixWebDriver;
+    OnixWebDriver driver;
 
     @BeforeClass
     public void driverSetup() {
-        onixWebDriver = new OnixWebDriver();
+        driver = new OnixWebDriver();
     }
 
     @AfterClass
     public void driverQuit() {
-        onixWebDriver.quit();
+        driver.quit();
+    }
+
+    protected MainPO mainPO() {
+        driver.get("http://the-internet.herokuapp.com/");
+        return new MainPO(driver);
     }
 }

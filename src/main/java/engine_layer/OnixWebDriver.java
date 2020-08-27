@@ -26,9 +26,9 @@ public class OnixWebDriver {
         driver.quit();
     }
 
-    public List<OnixWebElement> findElements(By path) {
+    public List<OnixWebElement> findElements(Locator locator) {
         List<OnixWebElement> onixElements = new ArrayList<>();
-        for(WebElement e : driver.findElements(path)) {
+        for(WebElement e : driver.findElements(locator.getPath())) {
             onixElements.add(new OnixWebElement(e));
         }
         return onixElements;
