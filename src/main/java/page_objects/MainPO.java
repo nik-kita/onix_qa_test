@@ -9,8 +9,8 @@ public class MainPO extends BasePO {
         super(driver);
     }
 
-    public JavaScriptAlertsPO goJavaScriptAlertsPage() {
+    public JsAlertsPO goJsAlertsPage() {
         driver.findElement(MainPageLoc.MenuLink.JAVASCRIPT_ALERTS).click();
-        return new JavaScriptAlertsPO(driver);
+        return new JsAlertsPO(driver);
     }
 }
