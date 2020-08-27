@@ -2,11 +2,9 @@ package locators;
 
 import org.openqa.selenium.By;
 
-public enum MainPageLoc implements Locator {
+public enum MainPageLoc implements Locator, GeneralLocators {
     WELCOME_TITLE(By.cssSelector("h1")),
     AVAILABLE_EXAMPLES_TITLE(By.cssSelector("h2")),
-    FORK_ME_ON_GITHUB_LABEL(By.cssSelector("[alt='Fork me on GitHub']")),
-    BOTTOM_ELEMNTALSELENIUM_LINK(By.cssSelector("[href='http://elementalselenium.com/']")),
     ;
 
     private By path;
