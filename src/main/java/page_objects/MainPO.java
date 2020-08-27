@@ -13,4 +13,9 @@ public class MainPO extends BasePO {
         driver.findElement(MainPageLoc.MenuLink.JAVASCRIPT_ALERTS).click();
         return new JsAlertsPO(driver);
     }
+
+    public FormAuthenticationPO goFormAuthenticationPage() {
+        driver.findElement(MainPageLoc.MenuLink.FORM_AUTHENTICATION).click();
+        return new FormAuthenticationPO(driver);
+    }
 }
