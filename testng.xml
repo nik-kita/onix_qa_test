@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test parallel="classes"
+            verbose="2" preserve-order="true" name="All_classes">
+        <classes>
+            <class name="MainPageTests"></class>
+            <class name="FormAuthenticationTests"></class>
+            <class name="DropDownTests"></class>
+        </classes>
+    </test>
+</suite>

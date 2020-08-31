@@ -21,6 +21,9 @@ hs_err_pid*
 
 ## Directory-based project format:
 .idea/
+
+#ALLURE
+allure-results/
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
