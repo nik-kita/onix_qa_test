@@ -3,8 +3,8 @@
 
 
 ## HOW RUN:
-> * ####`mvn clean test -Dsurefire.suiteXmlFiles=testng.xml`
-> * ####`allure serve allure-results`
+> * #### `mvn clean test -Dsurefire.suiteXmlFiles=testng.xml`
+> * #### `allure serve allure-results`
 ---
  ##### HOW RUN (instruction in all details, step by step):
 1. open terminal and install maven and allure if they are not already installed:
