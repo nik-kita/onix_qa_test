@@ -25,4 +25,9 @@ public class DropDownTests extends TestRunner {
                 BaseLoc.values()
         );
     }
+
+    @Test
+    public void test(){
+        System.out.println("hello");
+    }
 }
