@@ -1,5 +1,12 @@
 # onix_qa_test
-
+This project is simply testing user interface of http://the-internet.herokuapp.com/.
+For this issue uses Page Object Pattern.
+Also test runs in parallel class mode.
+In this project are using such technologies as: Maven, Selenium, TestNG, Allure etc.. You may see all list 
+if you open POM.xml file.
+So you should open this site and look on it to understand what these tests will test.
+For now they simply check all elements on some pages. So today there are only smoke tests
+for some pages of this site.
 
 
 ## HOW RUN:
