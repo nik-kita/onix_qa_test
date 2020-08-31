@@ -1,6 +1,7 @@
 # onix_qa_test
 
-For run existing tests you nedd open ane of test classes. In future project will be upgraded. It is only **TODAY** solution:
+For run existing tests you need to open any of test classes. In future project will be upgraded. It is only **TODAY** solution.
+##### Test classes in project tree structure _(between horizontal lines)_:
 ```
 .
 ├── pom.xml
