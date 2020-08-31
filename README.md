@@ -16,7 +16,7 @@
         * `sudo apt-get install allure`
 2. clone this project from git-hub to your computer and go to folder with project:
    * `git clone https://github.com/nik-kita/onix_test.git`
-   * `cd cd onix_qa_test/`
+   * `cd onix_qa_test/`
 3. run all test by maven:
    * `mvn clean test -Dsurefire.suiteXmlFiles=testng.xml`
 4. see allure report in browser:
